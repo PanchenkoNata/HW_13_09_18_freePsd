@@ -1,19 +1,26 @@
-@import { 
-	url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway');
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+.container, input, button {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+}
 .container {
 	margin: 0 auto;
 	width: 1400px;
 	position: relative;
-	font-family: 'Open Sans', sans-serif;;
-	font-size: 14px;
-	color: #ffffff;
 	background-color: #ffffff;
 }
 .left {
@@ -21,70 +28,99 @@
 	float: left;
 }
 .right {
-	margin-right: 148px;
+	margin-right: 149px;
 	float: right;
 }
-ul {
-	list-style: none;
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 34px;
+	line-height: 1.250;
+	letter-spacing: 1.2px;
+	margin-top: 21px;
+	margin-left: -2px;
+}
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #515151;
+}
+h3 {
+	font-size: 14px;
+	color: #212121;
+	margin-top: 34px;
+	margin-left: 69px;
 }
 hr {
 	width: 64px;
 	size: 2px;
 }
+
+
 /*NAV BAR*/
 nav {
 	height: 70px;
 	width: 100%;
 	background-color: #000000;
-	position: absolute; /*nav bar always will be on top of page --> in parent block - position: relative; */
+	position: absolute; 
 }
 .logo {
-	margin-top: 23px;
+	margin-top: 21px;
 }
 .logo img {
-	width: 78px;
+	width: 79px;
 }
 nav ul {
-	margin-top:20px;
+	margin-top:25px;
 }
 nav li {
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 46px;
+	
+}
+nav li a {
 	color: rgba(255, 255, 255, 0.69);
+}
+nav li a:hover {
+	color: rgba(255, 255, 255);
 }
 
 /*HEADER*/
 header {
 	padding-top: 120px;
-	height: 642px;
+	height: 711px;
 	background-image: url("../images/header_bg.gif");
 }
 .info {
 	width: 520px;
 }
+.info div {
+	margin-top: 60px;
+}
 .info img {
 	width: 175px;
 }
-h1 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 34px;
-	margin-top: 20px;
-}
 .info p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+	line-height: 1.438;
+	letter-spacing: -0.1px;
 	color: rgba(255, 255, 255, 0.8);
-	margin-top: 20px;
+	margin-top: 35px;
 }
 .info hr {
-	margin-top: 20px;
+	margin-top: 33px;
 	border: solid 1px #ffffff;
+	margin-left: 2px;
 }
 .info button {
 	font-size: 15px;
+	letter-spacing: 0.9px;
 	width: 135px;
 	height: 42px;
-	margin-top: 20px;
+	margin-top: 41px;
+	margin-left: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
 	background: 0;  /*del default background-color*/
 	color: rgb(255, 255, 255);
 	border: solid 2px rgba(255, 255, 255, 0.61);
@@ -93,16 +129,18 @@ h1 {
 	/*form*/
 .signup {
 	width: 360px;
-	height: 362px;
+	height: 361px;
+	margin-top: 90px;
 	background-color: #ffffff;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 .signup p {
-	height: 44px;
-	padding-top: 10px;
+	height: 54px;
+	padding-top: 13px;
+	padding-left: 52px; /*text was not in the center*/
+	/*text-align: center;*/ 
 	font-size: 20px;
 	font-weight: bold;
-	text-align: center;
 	background-color: #f5f5f5;
 	color: #333333;
 	border-radius: 3px 3px 0 0;
@@ -111,28 +149,27 @@ h1 {
 	text-transform: uppercase;
 	color: #fda362;
 }
-
 .signup ul {
-	padding: 0 20px;
+	padding: 0 0 0 51px;
 }
 .signup li {
-	margin-top: 40px;
+	margin-top: 47px;
 }
 .signup input {
-	width: 100%; /*lines in input for all width*/
 	color: #bdbdbd;
+	width: 100%; /*lines in input for all width*/
 	border: 0; /*del style for input*/
 	border-bottom: solid 1px #f7f7f7;
-	/*background: 0;*/
 }
 .signup button {
+	font-size: 15px;
+	letter-spacing: 0.3px;
 	width: 100%;
-	height: 54px;
-	margin-top: 40px;
+	height: 53px;
+	margin-top: 53px;
 	border: 0;
-	border-radius: 0 0 3px  3px;
+	border-radius: 0 0 3px 3px;
 	background-color: #ff9b51;
-	color: #ffffff;
 }
 
 /*BRAND BAR*/
@@ -142,95 +179,137 @@ h1 {
 }
 .brandInfo {
 	width: 370px;
-}
-h2 {
-	font-size: 20px;
-	font-width: bold;
-	color: #828282;
-	margin-top:10px;
+	margin-left: 151px;
+	padding-top: 16px;
 }
 .brandInfo p {
 	color: #86878B;
-	margin-top:10px;
+	margin-left: 1px;
+	margin-top: 4px;
+}
+.brandIcons {
+	margin-right: 151px;
+	margin-top: 31px;
 }
 .brandIcons i {
 	height: 40px;
 	color: #cccccc;
-	margin-top:10px;
+	margin-left: 55px;
 }
 
 
 /*FEATURES*/
+	/*feature1*/
 .feature1 {
 	height: 595px;
-	padding-top: 40px;
+	padding-top: 146px;
 	background-color: #f5f5f5;
 }
 .feature1Info {
 	width: 390px;
-	padding-top: 10px;
+	margin-left: 142px;
 }
 .feature1Info ul {
-	margin-left: 0;
 	width: 112px;
-	padding-inline-start: 0;
-	margin-right: 0;
+	margin-left: 0;
 }
 .feature1Info li {
 	width: 112px;
 	height: 112px;
-	padding-top: 40px;
+	padding-top: 46px;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: 700;
+	text-transform: uppercase;
 	text-align: center;
 	background-color: #333333;
 	border: solid 1px #a5a5a5;
 }
+.feature1Info li:first-child {
+	height: 111px;
+	padding-top: 45px;
+	border-bottom: none;
+	border-radius: 3px 3px 0 0;
+}
+.feature1Info li:last-child {
+	height: 111px;
+	border-top: none;
+	border-radius: 0 0 3px 3px;
+}
+.feature1Info li:hover {
+	background-color: #ff8b38;
+}
 .feature1Info li a {
-	text-decoration: none;
 	color: #ffffff;
 }
 
 .fDescription {
-	width: 550px;
-	padding-top: 10px;
-	margin-left: 140px;
+	width: 510px;
+	padding-top: 4px;
+	margin-left: 213px;
 }
 .fDescription p {
 	color: #86878B;
-	margin-top:10px;
+	margin-top: 46px;
+	margin-left: -1px;
+	line-height: 1.435;
+}
+.fDescription p:nth-child(3) {
+	margin-top: 20px;
 }
 .fDescription button {
+	font-size: 15px;
 	width: 119px;
 	height: 44px;
-	margin-top: 40px;
+	margin-top: 48px;
 	border: 0;
 	border-radius: 3px;
 	background-color: #ff8b38;
-	color: #ffffff;
 }
 .feature1Image {
 	width: 300px;
-	margin-top: 40px;
+	margin-top: 25px;
+	margin-right: 168px;
 }
-
+	/*feature2*/
 .feature2 {
 	height: 595px;
-	padding-top: 40px;
+	margin-left: -34px;
+	padding-top: 111px;
 }
 .feature2Info {
-	width: 400px;
+	width: 440px;
+    margin-top: -9px;
+    margin-right: 162px;
+}
+.feature2Info hr {
+	margin-top: 23px;
+	border: solid 1px #ffd1af;
 }
 .feature2Info p {
 	color: #86878B;
-	margin-top:10px;
+	margin-top: 26px;
+	line-height: 1.45;
+}
+.title {
+	margin-top: 42px;
+}
+.titleItem {
+	margin-bottom: 33px;
 }
 
-h3 {
-	color: #212121;
+.titleItem div {
+	width: 40px;
+	height: 40px;
+	margin: 4px 0 50px;
+	border-radius: 50%;
+	border: solid 1px #ff8c39;
+}
+.titleItem i {
+	color: #ff8c39;
+	margin: 12px 10px;
+}
+.titleItem p {
+	margin-top: 5px;
+    margin-left: 71px;
 }
 
-.feature2Info hr {
-	margin-top: 20px;
-	border: solid 1px #ffd1af;
-}
