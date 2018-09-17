@@ -1,0 +1,45 @@
+@import {
+	url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	width: 1400px;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.69);
+}
+.left {
+	margin-left: 150px;
+	float: left;
+}
+.right {
+	margin-right: 148px;
+	float: right;
+}
+
+nav {
+	height: 70px;
+	width: 100%;
+	background-color: #000000;
+	position: absolute;
+}
+
+.logo {
+	margin-top: 23px;
+}
+nav ul {
+	list-style: none;
+	margin-top:20px;
+}
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
